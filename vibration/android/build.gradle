@@ -6,10 +6,6 @@ buildscript {
         google()
         mavenCentral()
     }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.0'
-    }
 }
 
 rootProject.allprojects {
@@ -29,7 +25,8 @@ android {
         minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    lintOptions {
+
+    lint {
         disable 'InvalidPackage'
     }
 }
