@@ -1,32 +1,24 @@
+plugins {
+    id 'com.android.library'
+}
+
 group 'com.benjaminabel.vibration'
 version '1.0-SNAPSHOT'
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-apply plugin: 'com.android.library'
-
 android {
     namespace "com.benjamin.vibration"
-    compileSdkVersion 34
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 21
+        minSdk 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     lint {
         disable 'InvalidPackage'
     }
+}
+
+dependencies {
+    // Keep it empty unless plugin needs androidX or kotlin
 }
