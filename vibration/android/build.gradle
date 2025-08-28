@@ -22,11 +22,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.benjaminabel.vibration'
-    compileSdkVersion 33
+    namespace "com.benjamin.vibration"
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
